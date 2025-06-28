@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//dfgcvbjh
 
 void main() {
   runApp(const MainApp());
@@ -12,7 +13,21 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: SimpleElevatedButton(),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Welcome to Flutter!',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+              SizedBox(height: 20),
+              SimpleElevatedButton(),
+            ],
+          ),
         ),
       ),
     );
